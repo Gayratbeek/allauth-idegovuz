@@ -33,7 +33,7 @@ class IdEgovUzAdapter(OAuth2Adapter):
         secrets = {
             'client_id': app.client_id,
             'client_secret': app.secret,
-            'grant_type': 'one_access_token_identify',
+            'grant_type': 'one_authorization_code',
             'access_token': access_token.token,
             'scope': app.client_id
         }
